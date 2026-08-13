@@ -686,11 +686,6 @@ h2 {
         width: 100vw;
         height: 100vh;
         overflow: hidden;
-
-        background-image: url("cafe.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 100vw 100vh;
     }
 
     body {
@@ -708,25 +703,29 @@ h2 {
         transform-origin: top left;
 
         overflow: visible;
-    }
 
+        background-image: url("cafe.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
 
     .ingredient,
     .serve,
     #muteMusic,
     .recipe-book-button,
     .ingredient-list-button {
-        font-size: 16px !important;
-        padding: 12px 18px !important;
-        min-height: 48px;
+        font-size: 13px !important;
+        padding: 5px 9px !important;
+        min-height: 0 !important;
     }
 
     .ingredients {
         gap: 12px !important;
         width: 95% !important;
     }
-
-}
+      
+  }
 </style>
 
 </head>
