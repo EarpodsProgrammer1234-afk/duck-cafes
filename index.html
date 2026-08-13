@@ -678,18 +678,31 @@ h2 {
     display: none !important;
 }
 
-    @media (orientation: portrait) {
-    body {
-        width: 100vh;
-        height: 100vw;
-        transform: rotate(90deg);
-        transform-origin: top left;
-        position: absolute;
-        top: 0;
-        left: 100%;
-    }
-}
+   @media (orientation: portrait) {
 
+    /* Make everything fit better */
+    body {
+        zoom: 0.8;
+    }
+
+    /* Bigger touch targets */
+    .ingredient,
+    .serve,
+    #muteMusic,
+    .recipe-book-button,
+    .ingredient-list-button {
+        font-size: 16px !important;
+        padding: 12px 18px !important;
+        min-height: 48px;
+    }
+
+    /* More space between ingredient buttons */
+    .ingredients {
+        gap: 12px !important;
+        width: 95% !important;
+    }
+
+}
 </style>
 
 </head>
