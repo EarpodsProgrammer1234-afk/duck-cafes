@@ -681,37 +681,20 @@ h2 {
 }
 
   @media (orientation: portrait) {
-
-    html {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
+    html,
+    body {
+        width: 100%;
+        min-height: 100%;
+        margin: 0;
     }
 
     body {
-        position: fixed;
-
-        width: 100vh;
-        height: 100vw;
-
-        top: 0;
-        left: 100vw;
-
-        margin: 0;
-
-        transform: rotate(90deg);
-        transform-origin: top left;
-
-        overflow: visible;
-
         background-image: url("cafe.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 100% 100%;
     }
-
-      
-  }
+}
 </style>
 
 </head>
